@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo1.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" >
+    <title>Últimas actividades añadidas</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/icon.png" alt="logo"></a>
+        <h1>Share Wu</h1>
+        <p>Comparte tus momentos con los demás</p>
+
+        <nav id="nav_container">
+            <label for="chkMenu">&#9776;</label>
+            <input type="checkbox" id="chkMenu">
+            <ul>
+                <li><a href="index.html" class="icon-home">Inicio</a></li>
+                <li><a href="buscar.html" class="icon-search">Buscar</a></li>  
+                <li><a href="login.html" class="icon-login">Login </a></li>              
+                <li><a href="index.html" class="icon-logout">Logout</a></li>                
+                <li><a href="registrar.html" class="icon-regis">Crear una cuenta</a></li>                
+                <li><a href="nueva.html" class="icon-new">Nueva</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    
+
+    <main>
+
+        <form class="login_form">
+            <div class="form_reg_div">
+                <div>
+                    <label for="login_label">Email</label>
+                    <input type="text" id="login_label" placeholder="Introduzca su correo" autofocus required>
+                </div>
+                <div>
+                    <label for="pass_label">Contraseña</label>
+                    <input type="text" id="pass_label" placeholder="Introduzca su contraseña" required>
+                </div>
+                <footer class="form_footer">
+                    <div>
+                        <input type="checkbox" id="recordar">
+                        <label for="recordar">Recordar sesión durante 30 días</label>
+                    </div>
+                    <div class="buttons_container">
+                        <button type="submit">Login</button>
+                        <button type="reset">Limpiar</button>
+                    </div>
+                    <a href="registrar.html">¿Todavía no tienes cuenta? Regístrate</a>
+                </footer>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <a href="about.html">Información de contacto</a>
+        <p>&copy; Roberto De Iulii Sepulcre 04/02/2026</p>
+    </footer>
+    
+</body>
+</html>

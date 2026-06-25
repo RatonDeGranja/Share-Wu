@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo1.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" >
+    <title>Últimas actividades añadidas</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/icon.png" alt="logo"></a>
+        <h1>Share Wu</h1>
+        <p>Comparte tus momentos con los demás</p>
+
+        <nav id="nav_container">
+            <label for="chkMenu">&#9776;</label>
+            <input type="checkbox" id="chkMenu">
+            <ul>
+                <li><a href="index.html" class="icon-home">Inicio</a></li>
+                <li><a href="buscar.html" class="icon-search">Buscar</a></li>  
+                <li><a href="login.html" class="icon-login">Login </a></li>              
+                <li><a href="index.html" class="icon-logout">Logout</a></li>                
+                <li><a href="registrar.html" class="icon-regis">Crear una cuenta</a></li>                
+                <li><a href="nueva.html" class="icon-new">Nueva</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <form id="nueva_form">
+            <input type="text" placeholder="Actividad X" required maxlength="200">
+            <input type="text" placeholder="Alicante, España" required>
+            <textarea required></textarea>
+            <div id="category_div">
+                <input type="text" list="cat_list" maxlength="100">
+                <datalist id="cat_list">
+                    <option value="Deporte"></option>
+                    <option value="Videojuegos"></option>
+                    <option value="Cine"></option>
+                </datalist>
+                <button>Añadir</button>
+                <div>
+                    <div>
+                        <label>Deporte</label>
+                        <button>Eliminar</button>
+                    </div>
+                    <div>
+                        <label>Videojuegos</label>
+                        <button>Eliminar</button>
+                    </div>
+                </div>
+            </div>
+            <input type="file"><br><br>
+            <div>
+                <button type="submit">Crear</button>
+                <button type="reset">Limpiar</button>
+            </div>
+            
+        </form>
+        <form id="photo_new_section">
+            <h2>Fotos</h2>
+            <div>
+                <h3>Añadir Fotos</h3><br>
+                <label for="file">
+                    <img src="./images/no_photo.jpg" alt="Imagen no encontrada"><br>
+                </label>
+                <textarea maxlength="250" required></textarea><br>
+                <input type="file" id="file" accept="image/*"><br>
+                <div>
+                    <button type="reset">Limpiar</button>
+                    <button>Añadir</button>
+                </div>
+                
+            </div>
+        </form>
+        <div id="new_act_fotos">
+            <div>
+                <h4>Foto 1</h4><br>
+                <img src="images/act.jpg" alt="Imagen no encontrada"><br>
+                <textarea maxlength="250">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nemo ipsum repellendus quo dolorem doloremque animi magni error minus qui. Est provident animi magni exercitationem at consequatur minus eaque sit.</textarea><br>
+                <button>Eliminar</button>
+            </div>
+            
+            <div>
+                <h4>Foto 2</h4><br>
+                <img src="images/act.jpg" alt="Imagen no encontrada"><br>
+                <textarea maxlength="250">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nemo ipsum repellendus quo dolorem doloremque animi magni error minus qui. Est provident animi magni exercitationem at consequatur minus eaque sit.</textarea><br>
+                <button>Eliminar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="about.html">Información de contacto</a>
+        <p>&copy; Roberto De Iulii Sepulcre <time datetime="2026-02-04">04/02/2026</time></p>
+    </footer>
+    
+</body>
+</html>
